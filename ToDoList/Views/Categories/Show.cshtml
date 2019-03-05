@@ -1,0 +1,8 @@
+<h3>Here are all the items in this category:</h3>
+<ol>
+    @foreach (var item in @Model["items"])
+    {
+        <li><a href="/categories/@Model["category"].GetId()/>@item.GetDescription()</a></li>
+    }
+</ol>
+<p><a href="/categories/@M"></a></p>
