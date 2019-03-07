@@ -27,6 +27,11 @@ namespace ToDoList.Models
       return _id;
     }
 
+    public void AddItem(Item item)
+    {
+      _items.Add(item);
+    }
+
     public static void ClearAll()
     {
       _instances.Clear();
@@ -41,5 +46,11 @@ namespace ToDoList.Models
     {
       return _instances[searchId-1];
     }
+
+    public List<Item> GetItems()
+    {
+      return _items;
+    }
+
   }
 }
