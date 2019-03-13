@@ -42,7 +42,7 @@ namespace ToDoList
 
   public static class DBConfiguration
   {
-    public static string ConnectionString = "server=localhost;user id=user;password=root;port=8889;database=to_do_list;";
+    public static string ConnectionString = "server=localhost;user id=root;password=root;port=8889;database=to_do_list;";
   }
 
 }
